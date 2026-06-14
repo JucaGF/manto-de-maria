@@ -1,2 +1,10 @@
 .superpowers/
 .worktrees/
+.next/
+node_modules/
+coverage/
+.env
+.env.local
+.env.*.local
+!.env.example
+npm-debug.log*
