@@ -14,5 +14,11 @@ export default defineConfig({
     globals: true,
     setupFiles: ["./tests/setup.ts"],
     css: true,
+    exclude: [
+      "**/.git/**",
+      "**/.next/**",
+      "**/.worktrees/**",
+      "**/node_modules/**",
+    ],
   },
 });
