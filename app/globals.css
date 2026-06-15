@@ -183,9 +183,10 @@ textarea:focus-visible {
 .marian-image-wrap {
   position: relative;
   display: grid;
-  width: min(78vw, 280px);
-  height: clamp(145px, 42vw, 170px);
-  margin: 0 auto;
+  width: min(70vw, 250px);
+  height: clamp(130px, 38vw, 150px);
+  margin: 0 auto 20px;
+  overflow: hidden;
   place-items: center;
 }
 
@@ -259,6 +260,8 @@ textarea:focus-visible {
 .marian-header.compact .marian-image-wrap {
   width: 190px;
   height: 126px;
+  margin-bottom: 0;
+  overflow: visible;
 }
 
 .marian-header.compact .marian-halo {
@@ -655,7 +658,7 @@ textarea:focus-visible {
   }
 
   .marian-image-wrap {
-    height: 150px;
+    height: 130px;
   }
 
   .home-actions {
