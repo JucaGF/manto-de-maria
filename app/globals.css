@@ -17,16 +17,19 @@
 }
 
 html {
+  min-height: 100%;
   min-width: 320px;
-  background: var(--sky-pale);
+  background: #fff8e8;
 }
 
 body {
+  min-height: 100vh;
   min-height: 100svh;
+  min-height: 100dvh;
   margin: 0;
   overflow-x: hidden;
   color: var(--ink);
-  background: var(--sky-pale);
+  background: #fff8e8;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -64,7 +67,9 @@ textarea:focus-visible {
 .sky-page {
   position: relative;
   isolation: isolate;
+  min-height: 100vh;
   min-height: 100svh;
+  min-height: 100dvh;
   overflow: hidden;
   background:
     radial-gradient(
@@ -140,7 +145,9 @@ textarea:focus-visible {
   position: relative;
   z-index: 2;
   width: min(100%, 430px);
+  min-height: 100vh;
   min-height: 100svh;
+  min-height: 100dvh;
   margin: 0 auto;
   padding:
     max(18px, env(safe-area-inset-top))
@@ -176,8 +183,8 @@ textarea:focus-visible {
 .marian-image-wrap {
   position: relative;
   display: grid;
-  width: min(100%, 390px);
-  height: clamp(196px, 53vw, 232px);
+  width: min(78vw, 280px);
+  height: clamp(145px, 42vw, 170px);
   margin: 0 auto;
   place-items: center;
 }
@@ -186,8 +193,8 @@ textarea:focus-visible {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 145px;
-  height: 145px;
+  width: 112px;
+  height: 112px;
   transform: translate(-50%, -51%);
   border: 1px solid rgba(221, 177, 78, 0.44);
   border-radius: 999px;
@@ -358,11 +365,11 @@ textarea:focus-visible {
   opacity: 0.9;
   filter: drop-shadow(0 -11px 24px rgba(255, 255, 255, 0.4));
   background:
-    radial-gradient(circle at 7% 78%, #fff 0 24%, transparent 25%),
-    radial-gradient(circle at 25% 63%, #fff 0 34%, transparent 35%),
-    radial-gradient(circle at 49% 76%, #fff 0 33%, transparent 34%),
-    radial-gradient(circle at 72% 56%, #fff 0 36%, transparent 37%),
-    radial-gradient(circle at 94% 75%, #fff 0 27%, transparent 28%);
+    radial-gradient(circle at 7% 78%, #fff8e8 0 24%, transparent 25%),
+    radial-gradient(circle at 25% 63%, #fff8e8 0 34%, transparent 35%),
+    radial-gradient(circle at 49% 76%, #fff8e8 0 33%, transparent 34%),
+    radial-gradient(circle at 72% 56%, #fff8e8 0 36%, transparent 37%),
+    radial-gradient(circle at 94% 75%, #fff8e8 0 27%, transparent 28%);
 }
 
 .inner-page .page-shell {
@@ -648,7 +655,7 @@ textarea:focus-visible {
   }
 
   .marian-image-wrap {
-    height: 180px;
+    height: 150px;
   }
 
   .home-actions {

@@ -25,6 +25,10 @@ export const PARTICIPANTS = [
   { name: "Malu", slug: "malu", password: "34" },
   { name: "Marina", slug: "marina", password: "58" },
   { name: "Mariah Alves", slug: "mariah-alves", password: "76" },
+  { name: "Aline", slug: "aline", password: "43" },
+  { name: "Lisandro", slug: "lisandro", password: "92" },
+  { name: "Joaquim", slug: "joaquim", password: "67" },
+  { name: "Clara Melo", slug: "clara-melo", password: "38" },
 ] as const;
 
 export async function seedParticipants(

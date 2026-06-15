@@ -44,6 +44,10 @@ publique.
 | Malu | `malu` | `34` |
 | Marina | `marina` | `58` |
 | Mariah Alves | `mariah-alves` | `76` |
+| Aline | `aline` | `43` |
+| Lisandro | `lisandro` | `92` |
+| Joaquim | `joaquim` | `67` |
+| Clara Melo | `clara-melo` | `38` |
 
 Para mudar as senhas iniciais, edite `PARTICIPANTS` em
 [`scripts/seed-participants.ts`](scripts/seed-participants.ts) e execute o seed
@@ -97,6 +101,10 @@ npm run seed
 
 O seed é idempotente: ele atualiza os participantes usando o `slug` e não cria
 duplicatas.
+
+Para adicionar os quatro participantes complementares em um banco que já
+possui os 21 iniciais, execute também a migration
+[`supabase/migrations/20260615021806_add_additional_participants.sql`](supabase/migrations/20260615021806_add_additional_participants.sql).
 
 ### Segurança do banco
 

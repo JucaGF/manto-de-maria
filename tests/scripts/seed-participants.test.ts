@@ -1,8 +1,8 @@
 import { PARTICIPANTS } from "@/scripts/seed-participants";
 
 describe("participant seed", () => {
-  it("contains the 21 approved participants", () => {
-    expect(PARTICIPANTS).toHaveLength(21);
+  it("contains the 25 approved participants", () => {
+    expect(PARTICIPANTS).toHaveLength(25);
     expect(PARTICIPANTS.map(({ name }) => name)).toEqual([
       "Henrique",
       "Cauã Victor",
@@ -25,6 +25,10 @@ describe("participant seed", () => {
       "Malu",
       "Marina",
       "Mariah Alves",
+      "Aline",
+      "Lisandro",
+      "Joaquim",
+      "Clara Melo",
     ]);
   });
 
@@ -47,6 +51,26 @@ describe("participant seed", () => {
       name: "Mariah Alves",
       slug: "mariah-alves",
       password: "76",
+    });
+    expect(PARTICIPANTS).toContainEqual({
+      name: "Aline",
+      slug: "aline",
+      password: "43",
+    });
+    expect(PARTICIPANTS).toContainEqual({
+      name: "Lisandro",
+      slug: "lisandro",
+      password: "92",
+    });
+    expect(PARTICIPANTS).toContainEqual({
+      name: "Joaquim",
+      slug: "joaquim",
+      password: "67",
+    });
+    expect(PARTICIPANTS).toContainEqual({
+      name: "Clara Melo",
+      slug: "clara-melo",
+      password: "38",
     });
   });
 });
